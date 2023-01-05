@@ -6,7 +6,16 @@
     text-shadow: none; /* Prevent inheritance from `body` */
 }
 
-.cover-container:before {
+.wrapper {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper::before {
     content: ' ';
     display: block;
     position: absolute;
@@ -23,6 +32,7 @@
 
 
 .cover-container {
+    position: relative;
     max-width: 60em;
 }
 
