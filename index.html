@@ -63,9 +63,9 @@
 			from datetime import datetime as dt
 			from dateutil.relativedelta import relativedelta
 			
-			new_year = dt(dt.now().year + 1, 1, 1, 0, 0, 0)
-			
 			next_year = dt.now().year + 1
+			new_year = dt(next_year, 1, 1, 1, 0, 0, 0)
+			
 			output_year = f"Time left till {next_year} 🍾"
 			Element("newyear").write(output_year)
 			
